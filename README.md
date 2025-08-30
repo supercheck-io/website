@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<img src="./supercheck-logo.png" alt="Supercheck Logo" width="75">
 
-## Getting Started
+# Supercheck
 
-First, run the development server:
+**Automation & Monitoring Platform for Modern Applications**
+
+[Supercheck](https://supercheck.io) is an enterprise-grade distributed platform engineered for scalability and reliability at scale. It delivers comprehensive test automation with real-time monitoring, intelligent job orchestration, and parallel execution capabilities, empowering development and SRE teams with a robust solution to accelerate software quality and delivery cycles.
+
+[![Deploy](https://img.shields.io/badge/Deploy%20with-Docker%20Compose-blue?logo=docker)](./docker-compose.yml)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Website](https://img.shields.io/badge/Website-supercheck.io-orange?logo=firefox)](https://supercheck.io)
+[![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS%20%7C%20Windows-lightgrey?logo=docker)](https://supercheck.io)
+[![Monitoring](https://img.shields.io/badge/Monitoring-Real--time-brightgreen?logo=grafana)](https://supercheck.io)
+[![Testing](https://img.shields.io/badge/Testing-Playwright-red?logo=playwright)](https://playwright.dev)
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) (or an alternative like [Orbstack](https://orbstack.dev))
+- At least 4GB of available RAM
+- At least 10GB of available disk space
+
+### 1. Clone and Setup
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/supercheck-io/supercheck.git
+cd supercheck
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Start Application Services
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Start the full application stack
+docker-compose up -d
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3. Access the Application
 
-## Learn More
+```bash
+# Main app
+http://localhost:3000
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 4. Stop Application Services
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Stop the full application stack
+docker-compose down
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🏞️ App Screenshot
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<div align="center">
+  <img src="./supercheck-app.png" alt="Supercheck Application Interface" >
+  <p><em>supercheck.io - Automation & Monitoring Platform for Modern Applications</em></p>
+</div>

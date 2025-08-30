@@ -9,7 +9,7 @@ interface TextEffectProps {
   preset?: 'fade-in' | 'fade-in-blur' | 'slide-up'
   speedSegment?: number
   delay?: number
-  as?: keyof JSX.IntrinsicElements
+  as?: 'div' | 'span' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p'
   per?: 'line' | 'word' | 'char'
 }
 
@@ -44,14 +44,28 @@ export function TextEffect({
     }
   }
 
-  const Component = motion[as as keyof typeof motion] || motion.div
+  const getMotionComponent = () => {
+    switch (as) {
+      case 'span': return motion.span
+      case 'h1': return motion.h1
+      case 'h2': return motion.h2
+      case 'h3': return motion.h3
+      case 'h4': return motion.h4
+      case 'h5': return motion.h5
+      case 'h6': return motion.h6
+      case 'p': return motion.p
+      default: return motion.div
+    }
+  }
+
+  const MotionComponent = getMotionComponent()
 
   if (per === 'line' && typeof children === 'string') {
     const lines = children.split('\n')
     return (
       <div className={className}>
         {lines.map((line, index) => (
-          <Component
+          <MotionComponent
             key={index}
             initial={variants[preset].initial}
             animate={isVisible ? variants[preset].animate : variants[preset].initial}
@@ -62,14 +76,14 @@ export function TextEffect({
             }}
           >
             {line}
-          </Component>
+          </MotionComponent>
         ))}
       </div>
     )
   }
 
   return (
-    <Component
+    <MotionComponent
       className={className}
       initial={variants[preset].initial}
       animate={isVisible ? variants[preset].animate : variants[preset].initial}
@@ -80,6 +94,6 @@ export function TextEffect({
       }}
     >
       {children}
-    </Component>
+    </MotionComponent>
   )
 }

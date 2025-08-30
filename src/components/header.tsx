@@ -7,10 +7,9 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import { ThemeSwitcher } from "@/components/theme-switcher";
 
-const menuItems: never[] = [];
 
 export const HeroHeader = () => {
-  const [menuState, setMenuState] = React.useState(false);
+  const [menuState] = React.useState(false);
   const [isScrolled, setIsScrolled] = React.useState(false);
 
   React.useEffect(() => {

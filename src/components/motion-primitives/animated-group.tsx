@@ -1,14 +1,14 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
-import { motion } from 'framer-motion'
+import { motion, Variants } from 'framer-motion'
 
 interface AnimatedGroupProps {
   children: React.ReactNode
   className?: string
   variants?: {
-    container?: any
-    item?: any
+    container?: Variants
+    item?: Variants
   }
 }
 

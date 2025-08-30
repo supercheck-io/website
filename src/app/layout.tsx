@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: "SuperCheck",
     images: [
       {
-        url: "/supercheck-app.png",
+        url: "/optimized/supercheck-app.webp",
         width: 1920,
         height: 1080,
         alt: "SuperCheck App - Automation & Monitoring Dashboard Interface",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "SuperCheck - Enterprise Test Automation & Monitoring Platform",
     description: "Empower development and SRE teams with SuperCheck's robust automation and monitoring solution.",
-    images: ["/supercheck-app.png"],
+    images: ["/optimized/supercheck-app.webp"],
     creator: "@supercheck_io",
   },
   robots: {

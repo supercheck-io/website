@@ -1,9 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import Image from "next/image";
 import { TextEffect } from "@/components/motion-primitives/text-effect";
 import { AnimatedGroup } from "@/components/motion-primitives/animated-group";
+import { OptimizedImage } from "@/components/optimized-image";
 import { HeroHeader } from "@/components/header";
 import FooterSection from "@/components/footer";
 import FeaturesSection from "@/components/features";
@@ -22,10 +22,9 @@ const transitionVariants = {
       filter: "blur(0px)",
       y: 0,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         bounce: 0.15,
         duration: 0.8,
-        ease: "easeOut",
       },
     },
   },
@@ -182,15 +181,14 @@ export default function HeroSection() {
                 }}
                 className="mt-20 mx-auto max-w-7xl px-8"
               >
-                <Image
+                <OptimizedImage
                   src="/supercheck-app.png"
                   alt="SuperCheck App - Automation & Monitoring Dashboard Interface"
-                  width={1920}
-                  height={1080}
-                  sizes="100vw"
+                  width={1600}
+                  height={1005}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1600px"
                   className="w-full h-auto object-contain rounded-lg"
                   priority
-                  quality={90}
                 />
               </AnimatedGroup>
             </div>
