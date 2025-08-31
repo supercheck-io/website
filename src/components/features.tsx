@@ -46,7 +46,7 @@ export default function FeaturesSection() {
     <section className="py-2" aria-labelledby="features-heading">
       <div className="mx-auto max-w-6xl space-y-6 px-6">
         <h2 id="features-heading" className="sr-only">
-          SuperCheck Platform Features
+          Supercheck Platform Features
         </h2>
         <motion.div
           variants={featureVariants.container}

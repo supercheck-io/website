@@ -180,7 +180,7 @@ export default function HeroSection() {
                 </div>
               </div>
 
-              {/* SuperCheck App Preview - Full Width */}
+              {/* Supercheck App Preview - Full Width */}
               <AnimatedGroup
                 variants={{
                   container: {
@@ -215,7 +215,7 @@ export default function HeroSection() {
               >
                 <OptimizedImage
                   src="/supercheck-app.png"
-                  alt="SuperCheck App - Automation & Monitoring Dashboard Interface"
+                  alt="Supercheck App - Automation & Monitoring Dashboard Interface"
                   width={1600}
                   height={1005}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1600px"

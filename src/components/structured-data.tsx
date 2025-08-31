@@ -2,7 +2,7 @@ export default function StructuredData() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: "SuperCheck",
+    name: "Supercheck",
     description:
       "Enterprise test automation and monitoring platform for modern applications",
     url: "https://supercheck.io",
@@ -15,12 +15,12 @@ export default function StructuredData() {
     },
     author: {
       "@type": "Organization",
-      name: "SuperCheck.io",
+      name: "Supercheck.io",
       url: "https://supercheck.io",
     },
     publisher: {
       "@type": "Organization",
-      name: "SuperCheck.io",
+      name: "Supercheck.io",
       url: "https://supercheck.io",
     },
     aggregateRating: {
@@ -43,7 +43,7 @@ export default function StructuredData() {
   const organizationData = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "SuperCheck.io",
+    name: "Supercheck.io",
     url: "https://supercheck.io",
     description:
       "Leading provider of enterprise test automation and monitoring solutions",

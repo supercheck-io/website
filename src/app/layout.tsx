@@ -15,27 +15,40 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SuperCheck - Enterprise Test Automation & Monitoring Platform",
-  description: "Empower development and SRE teams with SuperCheck's robust automation and monitoring solution. Features parallel test execution, multi-browser testing, real-time monitoring, and enterprise security for modern applications.",
-  keywords: ["test automation", "monitoring", "SRE", "DevOps", "Playwright", "enterprise testing", "CI/CD", "quality assurance", "parallel execution", "multi-browser testing"],
-  authors: [{ name: "SuperCheck Team" }],
-  creator: "SuperCheck.io",
-  publisher: "SuperCheck.io",
-  metadataBase: new URL('https://supercheck.io'),
+  title: "Supercheck | Automation & Monitoring for Modern Apps",
+  description:
+    "Empowering development and SRE teams with a scalable, distributed, and robust platform to drive faster delivery and higher software quality.",
+  keywords: [
+    "test automation",
+    "monitoring",
+    "SRE",
+    "DevOps",
+    "Playwright",
+    "enterprise testing",
+    "CI/CD",
+    "quality assurance",
+    "parallel execution",
+    "multi-browser testing",
+  ],
+  authors: [{ name: "Supercheck Team" }],
+  creator: "Supercheck.io",
+  publisher: "Supercheck.io",
+  metadataBase: new URL("https://supercheck.io"),
   alternates: {
-    canonical: '/',
+    canonical: "/",
   },
   openGraph: {
-    title: "SuperCheck - Enterprise Test Automation & Monitoring Platform",
-    description: "Empower development and SRE teams with SuperCheck's robust automation and monitoring solution. Features parallel test execution, multi-browser testing, real-time monitoring, and enterprise security.",
+    title: "Supercheck | Automation & Monitoring for Modern Apps",
+    description:
+      "Empower development and SRE teams with Supercheck's robust automation and monitoring solution. Features parallel test execution, multi-browser testing, real-time monitoring, and enterprise security.",
     url: "https://supercheck.io",
-    siteName: "SuperCheck",
+    siteName: "Supercheck",
     images: [
       {
         url: "/optimized/supercheck-app.webp",
         width: 1920,
         height: 1080,
-        alt: "SuperCheck App - Automation & Monitoring Dashboard Interface",
+        alt: "Supercheck App - Automation & Monitoring Dashboard Interface",
       },
     ],
     locale: "en_US",
@@ -43,8 +56,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SuperCheck - Enterprise Test Automation & Monitoring Platform",
-    description: "Empower development and SRE teams with SuperCheck's robust automation and monitoring solution.",
+    title: "Supercheck | Automation & Monitoring for Modern Apps",
+    description:
+      "Empowering development and SRE teams with a scalable, distributed, and robust platform to drive faster delivery and higher software quality.",
     images: ["/optimized/supercheck-app.webp"],
     creator: "@supercheck_io",
   },
@@ -54,9 +68,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
   verification: {
@@ -83,7 +97,7 @@ export default function RootLayout({
           defaultTheme="light-theme"
           enableSystem
           disableTransitionOnChange
-          themes={['light-theme', 'dark-theme', 'system']}
+          themes={["light-theme", "dark-theme", "system"]}
         >
           {children}
         </ThemeProvider>
