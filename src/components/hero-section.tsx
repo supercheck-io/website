@@ -172,7 +172,7 @@ export default function HeroSection() {
                     </a>
                     <YouTubeButton
                       key={2}
-                      url="https://www.youtube.com/@supercheck-io"
+                      url="https://www.youtube.com/watch?v=eQ_aCghTpeI&list=PLw76CEQ8n7V6__OFWqtsvsgX1anVmuRk0"
                       size="large"
                       className=""
                     />
