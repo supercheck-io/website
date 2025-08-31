@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-
 export default function FooterSection() {
   return (
     <footer className="relative z-30 bg-gradient-to-t from-white/95 to-white/80 backdrop-blur-sm pt-8 pb-6 dark:bg-gradient-to-t dark:from-gray-950/95 dark:to-gray-950/80">
@@ -11,7 +10,7 @@ export default function FooterSection() {
           </span>
           <div className="order-first flex flex-wrap justify-center gap-3 text-sm md:order-last">
             <Link
-              href="https://youtu.be/eQ_aCghTpeI"
+              href="https://www.youtube.com/@supercheck-io"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="YouTube"

@@ -1,10 +1,24 @@
-import React from 'react'
+import React from "react";
 
 export function CheckIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
-    <svg height="32px" width="32px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xmlSpace="preserve" {...props}>
+    <svg
+      height="32px"
+      width="32px"
+      version="1.1"
+      id="Capa_1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 32 32"
+      xmlSpace="preserve"
+      {...props}
+    >
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-      <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></g>
       <g id="SVGRepo_iconCarrier">
         <g>
           <g id="check_x5F_alt">
@@ -26,8 +40,8 @@ export function CheckIcon(props: React.SVGProps<SVGSVGElement>) {
 export function Logo() {
   return (
     <div className="flex items-center space-x-2">
-      <CheckIcon className="h-8 w-8" />
-      <span className="text-xl font-bold text-foreground">Supercheck</span>
+      <CheckIcon className="h-10 w-10" />
+      <span className="text-2xl font-bold text-foreground">Supercheck</span>
     </div>
-  )
+  );
 }

@@ -55,7 +55,7 @@ export default function StructuredData() {
     },
     sameAs: [
       "https://github.com/supercheck-io/supercheck",
-      "https://youtu.be/eQ_aCghTpeI",
+      "https://www.youtube.com/@supercheck-io",
     ],
   };
 

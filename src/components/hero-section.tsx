@@ -7,8 +7,26 @@ import { OptimizedImage } from "@/components/optimized-image";
 import { HeroHeader } from "@/components/header";
 import FooterSection from "@/components/footer";
 import FeaturesSection from "@/components/features";
-import GitHubStarButton from "@/components/github-star-button";
 import YouTubeButton from "@/components/youtube-button";
+
+function StarIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+    </svg>
+  );
+}
 
 const transitionVariants = {
   item: {
@@ -71,7 +89,7 @@ export default function HeroSection() {
         <HeroHeader />
         <main className="relative overflow-hidden">
           <section className="relative z-10">
-            <div className="relative pt-32 pb-8 md:pt-48 md:pb-12">
+            <div className="relative pt-32 pb-12">
               <div className="mx-auto max-w-6xl px-6 relative z-20">
                 <div className="text-center mx-auto max-w-4xl">
                   <AnimatedGroup variants={transitionVariants}>
@@ -103,7 +121,7 @@ export default function HeroSection() {
                     preset="fade-in-blur"
                     speedSegment={0.3}
                     as="h1"
-                    className="mt-12 text-balance text-5xl font-bold leading-tight text-gray-900 dark:text-white md:text-6xl lg:text-7xl lg:mt-16"
+                    className="mt-16 text-balance text-5xl font-bold leading-tight text-gray-900 dark:text-white md:text-6xl lg:text-7xl lg:mt-16"
                   >
                     Automation & Monitoring for Modern Apps
                   </TextEffect>
@@ -115,8 +133,9 @@ export default function HeroSection() {
                     as="p"
                     className="mx-auto mt-8 max-w-3xl text-balance text-xl leading-relaxed text-gray-600 dark:text-gray-300"
                   >
-                    Empower development and SRE teams with a robust solution to
-                    accelerate software quality and delivery cycles.{" "}
+                    Empowering development and SRE teams with a scalable,
+                    distributed, and robust platform to drive faster delivery
+                    and higher software quality.{" "}
                   </TextEffect>
 
                   <AnimatedGroup
@@ -131,16 +150,29 @@ export default function HeroSection() {
                       },
                       ...transitionVariants,
                     }}
-                    className="mt-5 flex flex-row items-center justify-center gap-4 flex-wrap"
+                    className="mt-12 flex flex-row items-center justify-center gap-2 flex-wrap"
                   >
-                    <GitHubStarButton
+                    <a
                       key={1}
-                      repo="supercheck-io/supercheck"
-                      className=""
-                    />
+                      href="https://github.com/supercheck-io/supercheck"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="
+                        inline-flex items-center justify-center gap-2
+                        bg-gray-900 hover:bg-gray-800 dark:bg-gray-100 dark:hover:bg-gray-200
+                        text-white dark:text-gray-900 font-medium text-base
+                        rounded-lg border border-gray-800 dark:border-gray-300
+                        transition-all duration-200
+                        shadow-sm hover:shadow-md
+                        px-2 py-3 min-w-[160px] h-[38px] mr-5
+                      "
+                    >
+                      <StarIcon className="size-4" />
+                      <span>Star on GitHub</span>
+                    </a>
                     <YouTubeButton
                       key={2}
-                      url="https://youtu.be/eQ_aCghTpeI"
+                      url="https://www.youtube.com/@supercheck-io"
                       size="large"
                       className=""
                     />
@@ -179,7 +211,7 @@ export default function HeroSection() {
                     },
                   },
                 }}
-                className="mt-20 mx-auto max-w-7xl px-8"
+                className="mt-16 mx-auto max-w-7xl px-8"
               >
                 <OptimizedImage
                   src="/supercheck-app.png"

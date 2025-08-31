@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import {
   Activity,
@@ -10,7 +10,7 @@ import {
   GitBranch,
   Building2,
 } from "lucide-react";
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 const featureVariants = {
   container: {
@@ -33,7 +33,7 @@ const featureVariants = {
       y: 0,
       scale: 1,
       transition: {
-        type: 'spring' as const,
+        type: "spring" as const,
         bounce: 0.1,
         duration: 0.6,
       },
@@ -43,8 +43,8 @@ const featureVariants = {
 
 export default function FeaturesSection() {
   return (
-    <section className="py-8" aria-labelledby="features-heading">
-      <div className="mx-auto max-w-6xl space-y-12 px-6">
+    <section className="py-2" aria-labelledby="features-heading">
+      <div className="mx-auto max-w-6xl space-y-6 px-6">
         <h2 id="features-heading" className="sr-only">
           SuperCheck Platform Features
         </h2>
@@ -55,7 +55,10 @@ export default function FeaturesSection() {
           viewport={{ once: true }}
           className="relative mx-auto grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4"
         >
-          <motion.div variants={featureVariants.item} className="rounded-lg border border-gray-200/30 dark:border-gray-800/30 bg-white/95 dark:bg-gray-950/95 p-6 space-y-3">
+          <motion.div
+            variants={featureVariants.item}
+            className="rounded-lg border border-gray-200/30 dark:border-gray-800/30 bg-white/95 dark:bg-gray-950/95 p-6 space-y-3"
+          >
             <div className="flex items-center gap-2">
               <Zap className="size-4" />
               <h3 className="text-sm font-medium">Parallel Execution</h3>
@@ -65,7 +68,10 @@ export default function FeaturesSection() {
               and job orchestration.
             </p>
           </motion.div>
-          <motion.div variants={featureVariants.item} className="rounded-lg border border-gray-200/30 dark:border-gray-800/30 bg-white/95 dark:bg-gray-950/95 p-6 space-y-3">
+          <motion.div
+            variants={featureVariants.item}
+            className="rounded-lg border border-gray-200/30 dark:border-gray-800/30 bg-white/95 dark:bg-gray-950/95 p-6 space-y-3"
+          >
             <div className="flex items-center gap-2">
               <Globe className="size-4" />
               <h3 className="text-sm font-medium">Multi-Browser Testing</h3>
@@ -75,7 +81,10 @@ export default function FeaturesSection() {
               comprehensive browser support.
             </p>
           </motion.div>
-          <motion.div variants={featureVariants.item} className="rounded-lg border border-gray-200/30 dark:border-gray-800/30 bg-white/95 dark:bg-gray-950/95 p-6 space-y-3">
+          <motion.div
+            variants={featureVariants.item}
+            className="rounded-lg border border-gray-200/30 dark:border-gray-800/30 bg-white/95 dark:bg-gray-950/95 p-6 space-y-3"
+          >
             <div className="flex items-center gap-2">
               <Activity className="size-4" />
               <h3 className="text-sm font-medium">Real-time Monitoring</h3>
@@ -85,7 +94,10 @@ export default function FeaturesSection() {
               dashboard reporting.
             </p>
           </motion.div>
-          <motion.div variants={featureVariants.item} className="rounded-lg border border-gray-200/30 dark:border-gray-800/30 bg-white/95 dark:bg-gray-950/95 p-6 space-y-3">
+          <motion.div
+            variants={featureVariants.item}
+            className="rounded-lg border border-gray-200/30 dark:border-gray-800/30 bg-white/95 dark:bg-gray-950/95 p-6 space-y-3"
+          >
             <div className="flex items-center gap-2">
               <Shield className="size-4" />
               <h3 className="text-sm font-medium">Enterprise Security</h3>
@@ -95,7 +107,10 @@ export default function FeaturesSection() {
               granular permissions.
             </p>
           </motion.div>
-          <motion.div variants={featureVariants.item} className="rounded-lg border border-gray-200/30 dark:border-gray-800/30 bg-white/95 dark:bg-gray-950/95 p-6 space-y-3">
+          <motion.div
+            variants={featureVariants.item}
+            className="rounded-lg border border-gray-200/30 dark:border-gray-800/30 bg-white/95 dark:bg-gray-950/95 p-6 space-y-3"
+          >
             <div className="flex items-center gap-2">
               <Database className="size-4" />
               <h3 className="text-sm font-medium">Multi-Test Types</h3>
@@ -105,7 +120,10 @@ export default function FeaturesSection() {
               platform.
             </p>
           </motion.div>
-          <motion.div variants={featureVariants.item} className="rounded-lg border border-gray-200/30 dark:border-gray-800/30 bg-white/95 dark:bg-gray-950/95 p-6 space-y-3">
+          <motion.div
+            variants={featureVariants.item}
+            className="rounded-lg border border-gray-200/30 dark:border-gray-800/30 bg-white/95 dark:bg-gray-950/95 p-6 space-y-3"
+          >
             <div className="flex items-center gap-2">
               <Container className="size-4" />
               <h3 className="text-sm font-medium">Docker Deployment</h3>
@@ -115,7 +133,10 @@ export default function FeaturesSection() {
               architecture.
             </p>
           </motion.div>
-          <motion.div variants={featureVariants.item} className="rounded-lg border border-gray-200/30 dark:border-gray-800/30 bg-white/95 dark:bg-gray-950/95 p-6 space-y-3">
+          <motion.div
+            variants={featureVariants.item}
+            className="rounded-lg border border-gray-200/30 dark:border-gray-800/30 bg-white/95 dark:bg-gray-950/95 p-6 space-y-3"
+          >
             <div className="flex items-center gap-2">
               <GitBranch className="size-4" />
               <h3 className="text-sm font-medium">CI/CD Integration</h3>
@@ -125,7 +146,10 @@ export default function FeaturesSection() {
               reporting.
             </p>
           </motion.div>
-          <motion.div variants={featureVariants.item} className="rounded-lg border border-gray-200/30 dark:border-gray-800/30 bg-white/95 dark:bg-gray-950/95 p-6 space-y-3">
+          <motion.div
+            variants={featureVariants.item}
+            className="rounded-lg border border-gray-200/30 dark:border-gray-800/30 bg-white/95 dark:bg-gray-950/95 p-6 space-y-3"
+          >
             <div className="flex items-center gap-2">
               <Building2 className="size-4" />
               <h3 className="text-sm font-medium">Multi-Organization</h3>
