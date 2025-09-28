@@ -121,9 +121,9 @@ export default function HeroSection() {
                     preset="fade-in-blur"
                     speedSegment={0.3}
                     as="h1"
-                    className="mt-16 text-balance text-5xl font-bold leading-tight text-gray-900 dark:text-white md:text-6xl lg:text-7xl lg:mt-16"
+                    className="mt-16 text-balance text-4xl font-bold leading-tight text-gray-900 dark:text-white md:text-5xl lg:text-6xl lg:mt-16"
                   >
-                    Automation & Monitoring for Modern Apps
+                    AI-Powered Automation & Monitoring for Modern Apps
                   </TextEffect>
                   <TextEffect
                     per="line"
@@ -214,7 +214,7 @@ export default function HeroSection() {
                 className="mt-16 mx-auto max-w-7xl px-8"
               >
                 <OptimizedImage
-                  src="/supercheck-app.png"
+                  src="/supercheck-screenshot.png"
                   alt="Supercheck App - Automation & Monitoring Dashboard Interface"
                   width={1600}
                   height={1005}
