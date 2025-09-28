@@ -27,22 +27,22 @@ export function OptimizedImage({
   return (
     <picture>
       <source 
-        srcSet={`/optimized${baseName}.avif`}
+        srcSet={`/images${baseName}.avif`}
         type="image/avif"
         media="(min-width: 768px)"
       />
       <source 
-        srcSet={`/optimized${baseName}.webp`}
+        srcSet={`/images${baseName}.webp`}
         type="image/webp"
         media="(min-width: 768px)"
       />
       <source 
-        srcSet={`/optimized${baseName}-mobile.webp`}
+        srcSet={`/images${baseName}-mobile.webp`}
         type="image/webp"
         media="(max-width: 767px)"
       />
       <Image
-        src={`/optimized${baseName}-optimized.png`}
+        src={`/images${baseName}-optimized.png`}
         alt={alt}
         width={width}
         height={height}

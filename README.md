@@ -49,9 +49,6 @@ http://localhost:3000
 docker-compose down
 ```
 
-## 🏞️ App Screenshot
+## ▶️ Overview Video
 
-<div align="center">
-  <img src="./supercheck-app.png" alt="Supercheck Application Interface" >
-  <p><em>supercheck.io - Automation & Monitoring Platform for Modern Applications</em></p>
-</div>
+[![Supercheck Platform Overview](./supercheck-screenshot.png)](https://www.youtube.com/watch?v=eQ_aCghTpeI&list=PLw76CEQ8n7V6__OFWqtsvsgX1anVmuRk0)
